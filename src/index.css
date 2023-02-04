@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Programme;
+  src: url(./customFonts/Programme-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: Programme !important;
+}
+
+body{
+  background-color: black;
+}
+
+.textArea > p{
+    font-size: 1.2rem;
+    width: max-content;
+    padding-right: 1.6rem;
+}
+
+.textArea p::selection, .textArea span::selection {
+  background-color: #e1e439d8;
 }
